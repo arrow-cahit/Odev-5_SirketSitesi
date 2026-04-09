@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCrea | Modern Web Çözümleri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">WebCrea.</div>
+        <ul class="nav-links">
+            <li><a href="#ana-sayfa">Ana Sayfa</a></li>
+            <li><a href="#hakkimizda">Hakkımızda</a></li>
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+        <button class="login-btn" onclick="patlat(event)">Giriş Yap</button>
+    </nav>
+
+    <section id="ana-sayfa" class="hero">
+        <div class="hero-text">
+            <span class="tag">DİJİTAL AJANS</span>
+            <h1>Modern ve Dinamik<br>Web Siteleri</h1>
+            <p>Markanızı dijital dünyada en iyi şekilde temsil edecek çözümler üretiyoruz.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="patlat(event)">Keşfet</button>
+                <button class="btn-secondary">Daha Fazla</button>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="https://cdn-icons-png.flaticon.com/512/3214/3214745.png" alt="Web Tasarım">
+        </div>
+    </section>
+    <section id="hakkimizda" class="features-section">
+        <h2 class="section-title">Neden Biz?</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" class="card-icon">
+                <h2>Modern Kodlama</h2>
+                <p class="desc">Flexbox, Grid ve temiz kod mimarisi.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="card-icon">
+                <h2>Hızlı Performans</h2>
+                <p class="desc">Sıfır gecikme ve optimize edilmiş siteler.</p>
+            </div>
+            <div class="card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" class="card-icon">
+                <h2>UI / UX Tasarım</h2>
+                <p class="desc">Kullanıcı deneyimini merkeze alan arayüzler.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="hizmetler" class="services-section">
+        <h2 class="section-title">Hizmetlerimiz</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1935/1935128.png" class="service-img">
+                <h3>Kurumsal Site</h3>
+                <button class="btn-outline" onclick="patlat(event)">Detaylar</button>
+            </div>
+            <div class="service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/3081/3081986.png" class="service-img">
+                <h3>E-Ticaret</h3>
+                <button class="btn-outline" onclick="patlat(event)">Detaylar</button>
+            </div>
+            <div class="service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" class="service-img">
+                <h3>SEO Yönetimi</h3>
+                <button class="btn-outline" onclick="patlat(event)">Detaylar</button>
+            </div>
+            <div class="service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1197/1197511.png" class="service-img">
+                <h3>Bakım & Destek</h3>
+                <button class="btn-outline" onclick="patlat(event)">Detaylar</button>
+            </div>
+        </div>
+    </section>
+    <footer id="iletisim" class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Hakkımızda</h3>
+                <p>Modern web teknolojileri ile dijital dünyada değer katıyoruz.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Hızlı Linkler</h3>
+                <ul>
+                    <li><a href="#ana-sayfa">Ana Sayfa</a></li>
+                    <li><a href="#hakkimizda">Özellikler</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>İletişim</h3>
+                <p>Mail: info@webcrea.com</p>
+                <p>Tel: +90 555 123 45 67</p>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2026 WebCrea. Tüm hakları saklıdır.</div>
+    </footer>
+    <script>
+        function patlat(e) {
+            const rect = e.target.getBoundingClientRect();
+            const x = rect.left + rect.width / 2;
+            const y = rect.top + rect.height / 2;
+            const exp = document.createElement("div");
+            exp.classList.add("explosion");
+            exp.style.left = x + "px";
+            exp.style.top = y + "px";
+            document.body.appendChild(exp);
+            setTimeout(() => {
+                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            }, 600);
+        }
+    </script>
+    </body>
+</html>
